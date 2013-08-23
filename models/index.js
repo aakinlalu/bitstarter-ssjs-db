@@ -41,7 +41,7 @@ if (!global.hasOwnProperty('db')) {
             port:     port,
             host:     host,
         };
-        var sq = new Sequelize(dbname, user, password, config);
+        var sq = new Sequelize(dbname, user, 'bitpass0', config);
     }
     global.db = {
         Sequelize: Sequelize,
